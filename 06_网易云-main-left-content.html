@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>网易云的主要区域</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+
+    <link rel="stylesheet" href="./css/main-area-right.css" />
+    <style>
+      .main .area {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #d3d3d3;
+        border-width: 0 1px;
+        background: url(./images/main_bg.png);
+      }
+
+      /* 左侧区域 */
+      .main .area-left {
+        width: 729px;
+        box-sizing: border-box;
+        padding: 20px 20px 40px;
+      }
+
+      /* 热门推荐列表 */
+      .recommend-section .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0 0;
+        margin-left: -42px;
+      }
+      .recommend-section .list .item {
+        margin: 0 0 30px 42px;
+        font-size: 12px;
+        width: 140px;
+        height: 204px;
+      }
+
+      /* 专辑列表 */
+      /* 公共的css */
+      .sprite_01 {
+        background-image: url(./images/list_sprite.png);
+        display: inline-block;
+      }
+      .sprite_02 {
+        background-image: url(./images/list_sprite02.png);
+        display: inline-block;
+      }
+      .icon_music {
+        width: 14px;
+        height: 11px;
+        background-position: 0 -24px;
+      }
+      .icon_play {
+        width: 16px;
+        height: 17px;
+        background-position: 0 0;
+      }
+      .iconall_sprite {
+        display: inline-block;
+        background-image: url(./images/iconall.png);
+      }
+      .iconall_sprite_radio {
+        background-position: -31px -658px;
+        width: 35px;
+        height: 15px;
+      }
+
+      .recommend-section .list .item .top {
+        position: relative;
+      }
+      .recommend-section .list .item .top .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: 0 0;
+      }
+
+      .recommend-section .list .item .top .info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 27px;
+        font-size: 12px;
+        color: #ccc;
+        background-position: 0 -537px;
+      }
+      .recommend-section .list .item .top .info .icon-music {
+        margin: 9px 5px 9px 10px;
+      }
+      .recommend-section .list .item .top .info .count {
+        margin-top: 7px;
+        position: absolute;
+      }
+      .recommend-section .list .item .top .info .icon-play {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        margin: auto 0;
+      }
+      /* 底部的样式 */
+      .recommend-section .list .item .bottom {
+        display: inline-block;
+        margin: 8px 0 3px;
+        font-size: 14px;
+        vertical-align: middle;
+      }
+      .recommend-section .list .item .bottom .icon-radio {
+        position: relative;
+        top: 2px;
+      }
+      .recommend-section .list .item .bottom:hover {
+        text-decoration: underline;
+      }
+
+      /* 新碟上架 */
+      .disc-section .content {
+        height: 186px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        border: 1px solid #d3d3d3;
+      }
+
+      .disc-section .content .inner {
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="area wrapper_02">
+        <div class="area-left">
+          <div class="recommend-section">
+            <!-- 标题 -->
+            <div class="header_type_02">
+              <div class="left-area">
+                <a class="title" href="">热门推荐</a>
+                <div class="keywords">
+                  <a class="item" href="#">华语</a>
+                  <span class="line">|</span>
+                  <a class="item" href="#">流行</a>
+                  <span class="line">|</span>
+                  <a class="item" href="#">摇滚</a>
+                  <span class="line">|</span>
+                  <a class="item" href="#">民谣</a>
+                  <span class="line">|</span>
+                  <a class="item" href="#">电子</a>
+                </div>
+              </div>
+              <div class="right-area">
+                <a class="more" href="">更多</a>
+                <i>&nbsp;</i>
+              </div>
+            </div>
+            <!-- 列表 -->
+            <div class="list">
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_02.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">2725万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <!-- <i class="iconall_sprite iconall_sprite_radio icon-radio"></i> -->
+                  『精选』全网最火超热门歌曲推荐(持续更新)</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_01.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">63万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <!-- <i class="iconall_sprite iconall_sprite_radio icon-radio"></i> -->
+                  KTV必点：有没有一首歌，唱着唱着就泪奔</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_03.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">3139万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <!-- <i class="iconall_sprite iconall_sprite_radio icon-radio"></i> -->
+                  【旋律控】那些让你一秒沦陷的欧美精选</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_08.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">4897万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <i class="iconall_sprite iconall_sprite_radio icon-radio"></i>
+                  失恋日记 | 换不同的场景 但哪里都是你</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_04.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">3104万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <i class="iconall_sprite iconall_sprite_radio icon-radio"></i>
+                  『1963-至今』日本经典动漫音乐大盘点</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_05.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">2998万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <i class="iconall_sprite iconall_sprite_radio icon-radio"></i>
+                  『武侠影视金曲100首』每个人心中的江湖梦</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_06.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">3214万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <i class="iconall_sprite iconall_sprite_radio icon-radio"></i>
+                  致回不去的校园，致那美好的曾经</a
+                >
+              </div>
+              <div class="item">
+                <div class="top">
+                  <img src="./images/list_07.jpg" alt="音乐封面" />
+                  <a class="cover sprite_01" href="#"></a>
+                  <div class="info sprite_01">
+                    <i class="icon-music icon_music sprite_02"></i>
+                    <span class="count">3430万</span>
+                    <i class="icon-play icon_play sprite_02"></i>
+                  </div>
+                </div>
+                <a class="bottom" href="#">
+                  <i class="iconall_sprite iconall_sprite_radio icon-radio"></i>
+                  开启心动模式，耳机里的糖分你一半</a
+                >
+              </div>
+            </div>
+          </div>
+          <div style="margin-bottom: 35px"></div>
+          <div class="disc-section">
+            <div class="header_type_02">
+              <div class="left-area">
+                <a class="title" href="">新碟上架</a>
+              </div>
+              <div class="right-area">
+                <a class="more" href="">更多</a>
+                <i>&nbsp;</i>
+              </div>
+            </div>
+            <div class="content">
+              <div class="inner"></div>
+            </div>
+          </div>
+          <div class="rank-section">
+            <div class="header_type_02">
+              <div class="left-area">
+                <a class="title" href="">热榜</a>
+              </div>
+              <div class="right-area">
+                <a class="more" href="">更多</a>
+                <i>&nbsp;</i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="area-right">
+          <div class="vip">
+            <img src="./images/dis_vip_card.png" alt="" />
+          </div>
+          <div class="user-longin">
+            <p class="desc">
+              登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机
+            </p>
+            <a class="btn" href="">用户登录</a>
+          </div>
+          <div class="settle-singer">
+            <div class="header_type_01">
+              <h3 class="title">入驻歌手</h3>
+              <a class="more" href="#">查看全部 &gt;</a>
+            </div>
+            <ul class="list">
+              <li>
+                <a class="item" href="#">
+                  <div class="album">
+                    <img src="./images/singer_01.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="singer"><span>张惠妹aMEI</span></div>
+                    <div class="desc">台湾歌手张惠妹</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <div class="album">
+                    <img src="./images/singer_02.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="singer">吴莫愁Momo</div>
+                    <div class="desc">《中国好声音》选手吴莫愁</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <div class="album">
+                    <img src="./images/singer_03.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="singer">孙楠</div>
+                    <div class="desc">歌手孙楠 代表作《你快回来》《燃烧》</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <div class="album">
+                    <img src="./images/singer_04.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="singer">麦田老狼</div>
+                    <div class="desc">歌手，音乐人。代表作《同桌的你》等。</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="item" href="#">
+                  <div class="album">
+                    <img src="./images/singer_05.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="singer">陈楚生</div>
+                    <div class="desc">唱作歌手</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="hot-anchor">
+            <div class="header_type_01">
+              <h3 class="title">热门主播</h3>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

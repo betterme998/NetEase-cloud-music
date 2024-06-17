@@ -1,0 +1,70 @@
+body {
+  font: 12px Arial, Helvetica, sans-serif;
+}
+
+.wrapper_01 {
+  width: 1100px;
+  margin: 0 auto;
+}
+.wrapper_02 {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.wrapper_03 {
+  width: 982px;
+  margin: 0 auto;
+}
+
+/* hot图标公共样式 方便多个地方使用  全局样式*/
+.topbar_sprite {
+  display: inline-block;
+  background-image: url(../images/topbar.png);
+}
+
+.topbar_icon_hot {
+  width: 28px;
+  height: 19px;
+  background-position: -190px 0;
+}
+
+/* 按钮公共样式 */
+.btn_sprite {
+  display: inline-block;
+  background: url(../images/btn_sprite.png) no-repeat;
+  border-radius: 4px;
+}
+
+/* 按钮类型01 */
+.btn_type_01_sup {
+  background-position: right -100px;
+  padding-right: 5px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+}
+.btn_type_01_sup > i {
+  display: block;
+  background: url(../images/btn_sprite.png) no-repeat;
+  background-position: 0 -59px;
+  padding-left: 3px;
+  height: 31px;
+}
+
+/* 按钮类型02 */
+.btn_type_02_sup {
+  font-family: simsun, \5b8b\4f53;
+  color: #333;
+  background-position: right -1020px;
+  padding-right: 5px;
+}
+.btn_type_02_sup > i {
+  display: block;
+  background: url(../images/btn_sprite.png) no-repeat;
+  background-position: 0 -1225px;
+  padding-left: 28px;
+  padding-right: 2px;
+  height: 31px;
+  line-height: 30px;
+  min-width: 23px;
+}
